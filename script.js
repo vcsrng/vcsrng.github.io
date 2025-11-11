@@ -72,6 +72,7 @@ const data = {
                 "Ensured the app met high accessibility standards, focusing on a user-centric design for the deaf community, which was recognized by Apple as a Swift Student Challenge Winner."
             ],
             links: {
+                appstore: "https://apps.apple.com/id/app/hetice/id6743929765",
                 testflight: "https://testflight.apple.com/join/BGzFxe1Z",
                 wwdc: "https://www.wwdcscholars.com/s/D591D59B-F8A6-4BF3-9EAE-8D7CFCC77C7A/2025"
             }
