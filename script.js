@@ -63,17 +63,16 @@ const data = {
                 "https://vcsrng.github.io/assets/projects/Hetice6.png"
             ],
             description: "Enhances environmental awareness for deaf individuals by converting sound into haptic feedback, offering a new way to experience the world through touch.",
-            tech_stack: ["SwiftUI", "CoreHaptics", "SoundAnalysis", "AVFoundation"],
+            tech_stack: ["SwiftUI", "UIKit", "AVFoundation", "CoreHaptics", "UserNotifications", "Accelerate"],
             role: "iOS Developer & Designer (WWDC25 Winning Project)",
             responsibilities: [
-                "Architected the entire application from concept to a functional prototype using SwiftUI.",
-                "Engineered a real-time audio analysis pipeline using the SoundAnalysis framework to identify specific environmental sounds.",
+                "Architected the entire application from concept to a functional prototype using SwiftUI, integrated with UIKit for AppDelegate and notification handling.",
+                "Engineered a real-time audio analysis pipeline using the Accelerate framework for high-performance frequency and amplitude calculations.",
                 "Designed and implemented a library of custom, rich haptic patterns with CoreHaptics to provide distinct tactile feedback.",
                 "Ensured the app met high accessibility standards, focusing on a user-centric design for the deaf community, which was recognized by Apple as a Swift Student Challenge Winner."
             ],
             links: {
                 appstore: "https://apps.apple.com/id/app/hetice/id6743929765",
-                testflight: "https://testflight.apple.com/join/BGzFxe1Z",
                 wwdc: "https://www.wwdcscholars.com/s/D591D59B-F8A6-4BF3-9EAE-8D7CFCC77C7A/2025"
             }
         },
