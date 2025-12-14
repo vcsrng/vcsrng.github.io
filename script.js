@@ -148,7 +148,7 @@ const data = {
             ],
             scale_image_to_height: true,
             description: "An educational physics app with interactive experiments, structured materials, and exercises to make physics accessible and engaging.",
-            tech_stack: ["SwiftUI", "UIKit", "SpriteKit", "GameplayKit", "UserDefault", "Lottie", "Notion"],
+            tech_stack: ["SwiftUI", "UIKit", "SpriteKit", "UserDefault", "Lottie", "Notion"],
             role: "iOS Developer, UX Designer & Project Manager",
             responsibilities: [
                 "Led project management using Notion to organize tasks and facilitate a parallel development workflow for the team.",
