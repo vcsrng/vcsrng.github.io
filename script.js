@@ -55,10 +55,10 @@ const data = {
         {
             name: "Aritmath",
             image: [
-                "/assets/projects/Aritmath.png",
-                "/assets/projects/Aritmath1.png",
-                "/assets/projects/Aritmath2.png",
-                "/assets/projects/Aritmath3.png"
+                "https://vcsrng.github.io/assets/projects/Aritmath.png",
+                "https://vcsrng.github.io/assets/projects/Aritmath1.png",
+                "https://vcsrng.github.io/assets/projects/Aritmath2.png",
+                "https://vcsrng.github.io/assets/projects/Aritmath3.png"
             ],
             scale_image_to_height: true,
             description: "A fast-paced mental arithmetic challenge that gamifies mathematical learning, using haptic feedback and competitive elements to engage users.",
