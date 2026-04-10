@@ -36,7 +36,8 @@ const data = {
             university: "BINUS University",
             period: "2021 - 2025",
             details: [
-                "Current GPA: 3.85/4.00",
+                "GPA: 3.85/4.00",
+                "Streaming: Database Technology",
                 "Contestant: The 2022 ICPC Asia Jakarta National Contest"
             ]
         },
@@ -51,6 +52,30 @@ const data = {
         }
     ],
     projects: [
+        {
+            name: "Aritmath",
+            image: [
+                "/assets/projects/Aritmath.png",
+                "/assets/projects/Aritmath1.png",
+                "/assets/projects/Aritmath2.png",
+                "/assets/projects/Aritmath3.png"
+            ],
+            scale_image_to_height: true,
+            description: "A fast-paced mental arithmetic challenge that gamifies mathematical learning, using haptic feedback and competitive elements to engage users.",
+            tech_stack: ["SwiftUI", "GameKit", "CoreHaptics", "UserDefault", "Combine"],
+            role: "iOS Developer, Designer & Project Manager",
+            responsibilities: [
+                "Architected a minimalist UI/UX, prioritizing a distraction-free aesthetic to enhance user concentration and seamless cognitive flow.",
+                "Engineered the core game engine and specialized arithmetic algorithms using SwiftUI and Foundation, optimized for high-performance execution and fluid responsiveness.",
+                "Leveraged GameKit to implement global leaderboards and 29 unique achievements, fostering a competitive ecosystem and driving long-term user retention.",
+                "Developed a high-fidelity haptic layer with CoreHaptics, delivering immersive, real-time tactile feedback for every mathematical interaction.",
+                "Directed the end-to-end App Store deployment lifecycle, including comprehensive QA, privacy compliance documentation, and successful Apple Review orchestration.",
+                "Successfully launched with a 9.3% conversion rate—significantly exceeding industry benchmarks—while generating 100+ organic impressions within the first week."
+            ],
+            links: {
+                appstore: "https://apps.apple.com/id/app/aritmath/id6761355682"
+            }
+        },
         {
             name: "Hetice",
             featured: true,
@@ -327,7 +352,7 @@ const data = {
     skillset: {
         tech: [
             "Swift", "SwiftUI", "UIKit", "Combine", "AutoLayout", "SwiftData", "CoreData",
-            "MapKit", "ARKit", "Watch Connectivity", "AVFoundation", "BackgroundTasks",
+            "MapKit", "ARKit", "GameKit", "Watch Connectivity", "AVFoundation", "BackgroundTasks",
             "C", "C++", "Java", "Python", "Git", "Xcode", "HTML", "CSS", "JavaScript", "MySQL", "PHP",
             "Localization", "Version Control", "Debugging", "Refactoring", "OOP"
         ],
@@ -341,6 +366,14 @@ const data = {
         ]
     },
     achievements: [
+        {
+            icon: "bi-patch-check-fill",
+            title: "EF SET English Certificate 78/100 (C2 Proficient)",
+            issuer: "EF SET",
+            date: "Nov 2025",
+            description: "Achieved the highest level of English proficiency under the CEFR standard, demonstrating mastery of the language in complex professional and academic contexts.",
+            verifyLink: "https://cert.efset.org/en/EWQTFw"
+        },
         {
             icon: "bi-apple",
             title: "Swift Student Challenge Winner 2025",
