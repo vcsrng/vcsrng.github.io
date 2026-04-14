@@ -70,7 +70,7 @@ const data = {
                 "Leveraged GameKit to implement global leaderboards and 29 unique achievements, fostering a competitive ecosystem and driving long-term user retention.",
                 "Developed a high-fidelity haptic layer with CoreHaptics, delivering immersive, real-time tactile feedback for every mathematical interaction.",
                 "Directed the end-to-end App Store deployment lifecycle, including comprehensive QA, privacy compliance documentation, and successful Apple Review orchestration.",
-                "Successfully launched with a 9.3% conversion rate—significantly exceeding industry benchmarks—while generating 100+ organic impressions within the first week."
+                "Successfully launched with a 10%+ conversion rate—significantly exceeding industry benchmarks—while generating 100+ organic impressions during the initial launch phase."
             ],
             links: {
                 appstore: "https://apps.apple.com/id/app/aritmath/id6761355682"
@@ -94,7 +94,8 @@ const data = {
                 "Architected the entire application from concept to a functional prototype using SwiftUI, integrated with UIKit for AppDelegate and notification handling.",
                 "Engineered a real-time audio analysis pipeline using the Accelerate framework for high-performance frequency and amplitude calculations.",
                 "Designed and implemented a library of custom, rich haptic patterns with CoreHaptics to provide distinct tactile feedback.",
-                "Ensured the app met high accessibility standards, focusing on a user-centric design for the deaf community, which was recognized by Apple as a Swift Student Challenge Winner."
+                "Ensured the app met high accessibility standards, focusing on a user-centric design for the deaf community, which was recognized by Apple as a Swift Student Challenge Winner.",
+                "Drove a 55%+ increase in first-time downloads and achieved over 2,500 organic impressions, effectively expanding the app's reach within the global accessibility community."
             ],
             links: {
                 appstore: "https://apps.apple.com/id/app/hetice/id6743929765",
