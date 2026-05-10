@@ -53,6 +53,30 @@ const data = {
     ],
     projects: [
         {
+            name: "RakitPC",
+            image: [
+                "https://vcsrng.github.io/assets/projects/RakitPC.png",
+                "https://vcsrng.github.io/assets/projects/RakitPC1.png",
+                "https://vcsrng.github.io/assets/projects/RakitPC2.png"
+            ],
+            scale_image_to_height: true,
+            description: "A full-stack Indonesian PC build configurator that validates hardware compatibility and power requirements in real-time, streamlining the path from research to purchase.",
+            tech_stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Zustand", "Vitest", "Playwright", "Python"],
+            role: "Full-Stack Developer & Architect",
+            responsibilities: [
+                "Architected the application using Feature-Sliced Design (FSD) to ensure the codebase stays organized and easy to scale as new features are added.",
+                "Engineered a real-time compatibility engine and TDP calculator that validates CPU sockets, RAM generations, and PSU safety thresholds with high precision.",
+                "Developed a high-fidelity data component library by scraping real-world pricing and technical specs directly from major Indonesian marketplaces.",
+                "Maintained high platform reliability through 87+ unit tests and 45+ end-to-end tests, ensuring a bug-free experience for every visitor.",
+                "Crafted the 'Luminous Clarity' design system, combining a premium aesthetic with a layout that is easy to navigate on both desktop and mobile.",
+                "Launched the platform to significant impact, reaching 1,000+ organic impressions by solving the stressful manual research process for the local PC building community.",
+                "Implemented an automated 'heartbeat' system to keep the site live 24/7, ensuring the tools are always available for builders whenever inspiration strikes."
+            ],
+            links: {
+                web: "https://rakit-pc.vercel.app"
+            }
+        },
+        {
             name: "Aritmath",
             image: [
                 "https://vcsrng.github.io/assets/projects/Aritmath.png",
@@ -355,6 +379,7 @@ const data = {
             "Swift", "SwiftUI", "UIKit", "Combine", "AutoLayout", "SwiftData", "CoreData",
             "MapKit", "ARKit", "GameKit", "Watch Connectivity", "AVFoundation", "BackgroundTasks",
             "C", "C++", "Java", "Python", "Git", "Xcode", "HTML", "CSS", "JavaScript", "MySQL", "PHP",
+            "React", "Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Zustand", "Vitest", "Playwright",
             "Localization", "Version Control", "Debugging", "Refactoring", "OOP"
         ],
         design: [
@@ -862,7 +887,34 @@ function renderAchievements(page) {
 function populateExperience() {
     const timeline = document.getElementById("experience-timeline");
     if (!timeline) return;
-    timeline.innerHTML = data.experience.map(exp => `
+
+    const sortedExperience = [...data.experience].sort((a, b) => {
+        const parseDate = (dateStr) => {
+            if (!dateStr || dateStr.toLowerCase().includes("present")) {
+                return new Date();
+            }
+            return new Date(dateStr);
+        };
+
+        const [startAStr, endAStr] = a.period.split(" - ");
+        const [startBStr, endBStr] = b.period.split(" - ");
+
+        const dateEndA = parseDate(endAStr);
+        const dateEndB = parseDate(endBStr);
+        const dateStartA = parseDate(startAStr);
+        const dateStartB = parseDate(startBStr);
+
+        if (dateEndB - dateEndA !== 0) {
+            return dateEndB - dateEndA;
+        }
+        if (dateStartB - dateStartA !== 0) {
+            return dateStartB - dateStartA;
+        }
+
+        return 0; 
+    });
+
+    timeline.innerHTML = sortedExperience.map(exp => `
         <div class="timeline-item">
             <h5 class="timeline-role">${exp.role}</h5>
             <h6 class="timeline-company">${exp.company}</h6>
@@ -874,7 +926,34 @@ function populateExperience() {
 function populateEducation() {
     const timeline = document.getElementById("education-timeline");
     if (!timeline) return;
-    timeline.innerHTML = data.education.map(edu => `
+
+    const sortedEducation = [...data.education].sort((a, b) => {
+        const parseDate = (dateStr) => {
+            if (!dateStr || dateStr.toLowerCase().includes("present")) {
+                return new Date();
+            }
+            return new Date(dateStr);
+        };
+
+        const [startAStr, endAStr] = a.period.split(" - ");
+        const [startBStr, endBStr] = b.period.split(" - ");
+
+        const dateEndA = parseDate(endAStr);
+        const dateEndB = parseDate(endBStr);
+        const dateStartA = parseDate(startAStr);
+        const dateStartB = parseDate(startBStr);
+
+        if (dateEndB - dateEndA !== 0) {
+            return dateEndB - dateEndA;
+        }
+        if (dateStartB - dateStartA !== 0) {
+            return dateStartB - dateStartA;
+        }
+
+        return 0; 
+    });
+
+    timeline.innerHTML = sortedEducation.map(edu => `
         <div class="timeline-item">
             <h5 class="timeline-role">${edu.degree}</h5>
             <h6 class="timeline-company">${edu.university}</h6>
