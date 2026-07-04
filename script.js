@@ -129,7 +129,9 @@ const data = {
         {
             name: "DariData",
             image: [
-                "https://vcsrng.github.io/assets/projects/Daridata.jpg"
+                "https://vcsrng.github.io/assets/projects/Daridata.jpg",
+                "https://vcsrng.github.io/assets/projects/Daridata2.png",
+                "https://vcsrng.github.io/assets/projects/Daridata3.png"
             ],
             scale_image_to_height: true,
             description: "Empowers retail SMEs by transforming raw sales data into actionable insights using data analytics and machine learning.",
